@@ -1,0 +1,261 @@
+/* 
+  Styling done by Princess Blessing Nkonda Kuenzob
+  Explained in my own words to show understanding
+*/
+
+/* Root element styling */
+/* Setting the font shorthand property with all six parts: italic style, small-caps variant, bold weight, 20px size, 1.5 line height, Arial font */
+/* Also setting a light blue background color for the entire page */
+:root {
+  font: italic small-caps bold 20px/1.5 "Arial", sans-serif;
+  background-color: #f0f8ff;
+}
+
+/* Body styling */
+/* Limits the content width to 960px and centers it horizontally with margin */
+/* Adds padding inside the body for spacing and a dark border around */
+/* Background color is white to separate content from page background */
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 0.2rem solid #333;
+  background-color: #ffffff;
+}
+
+/* Layout styling */
+/* Adds padding to main content area and sidebar for breathing room */
+/* Floats main to left at 70% width and aside to right at 30% width */
+/* box-sizing ensures padding doesn't break the widths */
+/* Background colors to visually separate sections */
+main, aside {
+  padding: 1.5rem;
+}
+
+main {
+  float: left;
+  width: 70%;
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+
+aside {
+  float: right;
+  width: 30%;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+/* Footer clears floats so it sits below content */
+/* Adds gradient background, centers text, sets color and font size */
+footer {
+  clear: both;
+  padding: 1rem;
+  background: linear-gradient(to right, #89f7fe, #66a6ff);
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Header styling */
+/* Larger font size for emphasis, dark blue text */
+/* Gradient background to add visual interest */
+/* Centered text with padding and serif font for elegance */
+header {
+  font-size: 2.5rem;
+  color: #333366;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  text-align: center;
+  padding: 1.5rem 0;
+  font-family: 'Georgia', serif;
+}
+
+/* Blockquote styling */
+/* Italic font style to show it’s a quote */
+/* Light background with left blue border to highlight */
+/* Padding inside for spacing */
+/* Width set to 80% and centered with margin */
+/* Subtle shadow to lift it off the page */
+blockquote {
+  font-style: italic;
+  background-color: #f0f8ff;
+  padding: 1rem 2rem;
+  border-left: 0.5rem solid #66a6ff;
+  width: 80%;
+  margin: 1.5rem auto;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Figure and image styling */
+/* Figure has border, rounded corners, padding and light background */
+/* Width 90% and centered */
+/* Image is block-level for better layout, with border and rounded corners */
+/* Width set to 100% to fill figure container and centered */
+/* Figcaption text is smaller and small caps, centered below image */
+figure {
+  border: 0.2rem solid #ccc;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #fafafa;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+figure img {
+  display: block;
+  border: 0.2rem solid #999;
+  border-radius: 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  font-variant: small-caps;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* iFrame styling */
+/* Border to define video area */
+/* Block display so margin centering works */
+/* Width 80% and centered horizontally */
+iframe {
+  border: 0.3rem solid #666;
+  display: block;
+  margin: 1rem auto;
+  width: 80%;
+  height: auto;
+}
+
+/* Quote section styling */
+/* Border with color and thickness */
+/* Box shadow to create depth */
+/* Width 70% and centered */
+/* Serif font with italic style for elegance */
+/* Dark blue color for text */
+/* Padding inside and center aligned text */
+#quote {
+  border: 0.2rem solid #66a6ff;
+  box-shadow: 0 0 1rem 0.1rem rgba(102, 166, 255, 0.3);
+  width: 70%;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  color: #333366;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+/* List styling */
+/* Removes bullet points from unordered lists */
+/* Removes default padding for clean alignment */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Link styling */
+/* Removes underline for links normally */
+/* Underline appears on hover for clarity */
+/* Different colors for link states for user feedback */
+a:link {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #004499;
+}
+
+a:active {
+  color: #002244;
+}
+
+/* Table styling */
+/* Full width table with collapsed borders */
+/* Margin below table for spacing */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+/* Table headers */
+/* Left aligned text, bold and small caps for emphasis */
+/* Blue background with white text for contrast */
+/* Padding for spacing */
+th {
+  text-align: left;
+  font-weight: bold;
+  font-variant: small-caps;
+  background-color: #66a6ff;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+/* Table data cells */
+/* Padding inside cells */
+/* Light border for separation */
+td {
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid #ccc;
+}
+
+/* Alternate row colors for readability */
+tr:nth-child(even) {
+  background-color: #f5faff;
+}
+
+/* Row highlight on hover for user feedback */
+tr:hover {
+  background-color: #dbe9ff;
+}
+
+/* Form label styling */
+/* Small caps, medium weight and dark blue color for label clarity */
+.form-label {
+  font-variant: small-caps;
+  font-weight: 600;
+  color: #333366;
+}
+
+/* Form controls styling */
+/* Padding for comfort, border with rounded corners */
+/* Full width to line up nicely */
+/* Margin bottom for spacing between controls */
+.form-control {
+  padding: 0.5rem;
+  border: 0.1rem solid #999;
+  border-radius: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+/* For screens smaller than 600px */
+/* Reduce font size for readability */
+/* Remove floats so content stacks vertically */
+/* Make main and aside full width */
+/* Smaller footer font size */
+@media (max-width: 600px) {
+  :root {
+    font-size: 16px;
+  }
+  
+  main, aside {
+    float: none;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  
+  footer {
+    font-size: 0.8rem;
+  }
+}
